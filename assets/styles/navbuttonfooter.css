@@ -1,0 +1,245 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.875rem;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .7);
+    height: 9vh;
+    position: relative;
+}
+
+.navbar .logo {
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+    position: absolute;
+    left: 0%;
+}
+
+.navbar .searchbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    width: 30rem;
+    height: 75%;
+    border-radius: 2rem;
+    padding: 0.25rem;
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 39%;
+    transform: translate(-50%, -50%);
+}
+
+#searchinput {
+    background-color: #dbdbdb;
+    border: none;
+    border-radius: 2rem;
+    width: 87%;
+    height: 80%;
+    padding: 0 1rem;
+}
+
+.performsearch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #a6ffa5;
+    border: none;
+    border-radius: 2rem;
+    height: 80%;
+    width: 13%;
+    margin-left: 0.3rem;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.performsearch:hover {
+    background-color: #85e085;
+}
+
+.navbar .navlist {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 0;
+    position: absolute;
+    right: 0;
+}
+
+
+.navbar .navlist>li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.homebutton {
+    margin-right: 0.25rem;
+}
+
+.loginbutton {
+    margin-right: 0.25rem;
+}
+
+#hiddennav {
+    display: none;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .navbar .logo {
+        padding: 10px;
+    }
+
+    .navbar .searchbar {
+        width: 25rem;
+        height: 65%;
+        left: 42.5%;
+    }
+
+    #searchinput {
+        width: 85%;
+    }
+
+    .performsearch {
+        width: 15%;
+    }
+
+    .navbar .navlist>li {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .navbar {
+        height: 8vh;
+    }
+
+    .navbar .searchbar {
+        width: 15rem;
+        height: 50%;
+        left: 37.5%;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar .logo {
+        width: 35px;
+    }
+    .navbar .searchbar {
+        display: none;
+    }
+
+    .navbar .navlist {
+        display: none;
+    }
+
+    #hiddennav {
+        height: 100%;
+        width: 3rem;
+        display: block;
+        position: absolute;
+        right: 10px;
+        transform: translateY(-50%);
+        top: 50%;
+        cursor: pointer;
+        background: none;
+        border: none;
+    }
+
+    #hiddennav::before,
+    #hiddennav::after,
+    #hiddennav .middle-bar {
+        content: '';
+        position: absolute;
+        background-color: rgb(255, 255, 255);
+        height: 0.25rem;
+        width: 2.5rem;
+        border-radius: 2rem;
+        transition: transform 500ms ease-in-out, opacity 500ms ease-in-out;
+    }
+
+    #hiddennav::before {
+        top: calc(50% - 0.6rem);
+        right: 0;
+        transform-origin: center;
+        opacity: 100;
+    }
+
+    #hiddennav .middle-bar {
+        top: 50%;
+        right: 0;
+        transform-origin: center;
+    }
+
+    #hiddennav::after {
+        top: calc(50% + 0.6rem);
+        right: 0;
+        transform-origin: center;
+        opacity: 100;
+    }
+
+    #hiddennav.close::before {
+        left: 8px;
+        top: 30px;
+        transform: rotate(45deg);
+        opacity: 1;
+    }
+
+    #hiddennav.close .middle-bar {
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    #hiddennav.close::after {
+        top: 30px;
+        transform: rotate(-45deg);
+        opacity: 1;
+    }
+
+    .navbar {
+        background-color: #4c4c4c;
+    }
+
+    .navlist {
+        display: none;
+        position: absolute;
+        right: 0;
+        top: 0;
+        transform: translateX(100%);
+        list-style-type: none;
+        padding: 0;
+        background-color: #f9f9f9;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .navlist.show-nav {
+        display: block;
+        transform: translateX(0);
+        padding: 0;
+        margin: 0;
+        background-color: #4c4c4c;
+        height: 60vh;
+        width: 15rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navlist.show-nav li {
+        margin: 10px 0;
+    }
+}

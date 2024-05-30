@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assets</title>
+    <link rel="stylesheet" href="assets/styles/navbuttonfooter.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <img class="logo" id="logo" src="/assets/img/LogoDesktop.svg" alt="Logo">
+            <div class="searchbar">
+                <input type="text" id="searchinput" placeholder="Search..." onkeydown="checkKeyPress(event)">
+                <button class="performsearch" onclick="performsearch()"><ion-icon name="search"></ion-icon></button>
+            </div>
+            <ul id="navlist" class="navlist">
+                <li><ion-icon name="home-outline" class="homebutton"></ion-icon>Home</li>
+                <li>Catalog</li>
+                <li>Contact</li>
+                <li><ion-icon name="person-outline" class="loginbutton"></ion-icon>Connection</li>
+            </ul>
+            <button id="hiddennav" onclick="toggleNav()">
+                <div class="middle-bar"></div>
+            </button>
+        </nav>
+    </header>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="assets\js\script.js"></script>
+</body>
+
+</html>
