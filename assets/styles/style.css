@@ -2,10 +2,12 @@ body {
     margin: 0;
     padding: 0;
     background: rgb(236, 236, 236);
+    font-family: 'Roboto', sans-serif;
 }
 
 header {
-    min-height: 88vh;
+    min-height: 90vh;
+    /* aspect-ratio: 24/16; */
     background: url(/assets/img/green-4183977_1280\ 1.svg);
     background-size: cover;
     color: white;
@@ -21,13 +23,17 @@ header {
     cursor: pointer;
 }
 
+.logoMobil {
+    display: none;
+}
+
 h1 {
     position: absolute;
     top: 20%;
     left: 8%;
     color: white;
     font-size: 10rem;
-    font-family: "JejuMyeongjo", cursive;
+    font-family: "Inria sans", cursive;
 }
 
 header > p {
@@ -72,25 +78,36 @@ header > p {
 
 
 .textShare{
-    height: ;
     width: 100%;
+    height: 10vh;
     display: flex;
-    align-items: center;
-    flex-direction: column;
+    justify-content: center;
     background: #CCD2C8;
 }
 
-.textShare__Sb {
-    align-self: center;
+.textShare > p > span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-weight: bold;
+    font-size: 20px;
 }
 
-.textShare p {
+.textShare__P {
+    margin-top: 0;
     font-size: 30px;
     font-style: italic;
 }
 
-/* @media screen and (max-width: px) {
+@media screen and (max-width: 950px) {
 
-    
-} */
+    .logo {
+        display: none;
+    }
+
+    .logoMobil {
+        display: block;
+        height: 100px;
+        width: 100px;
+    }
+}
