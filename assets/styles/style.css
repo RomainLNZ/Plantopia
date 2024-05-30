@@ -117,12 +117,9 @@ p {
     font-style: italic;
 }
 
-section {
-    width: 100vw;
-    height: 110vh;
+.discover {
+    height: 100vh;
     background-image: url(/assets/img/Germ.png);
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 .discoPlant {
@@ -147,11 +144,27 @@ section {
     text-align: center;
 }
 
+.faq {
+    height: 100vh;
+    background: #ccd2c8;
+}
+
+.faq__logo {
+    height: 6rem;
+    width: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: #9ebf9b;
+}
+
+
+/* media queries */
 @media screen and (max-width: 740px) {
 
     header{
         min-height: 30vh;
-
     }
 
     .header__btn {
@@ -162,6 +175,16 @@ section {
         font-size: 5rem;
         top: 3%;
         left: 25%;
+    }
+
+    .discover {
+        min-height:100vh ;
+        background-position: right;
+
+    }
+
+    h2 {
+        margin-bottom: 0;
     }
 
     header > p > span.desktopText {
@@ -180,23 +203,18 @@ section {
         display: none;
     }
 
-    section {
-        width: 100vw;
-        height: 100vh;
-        background-size: auto;
-    
-    }
+
 
     .discoPlant{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        justify-content: space-evenly;
+        justify-content: space-between;
 }
 
     .discoPlant > .circle {
-        height: 10rem;
-        width: 10rem;
+        height: 11rem;
+        width: 11rem;
     }
 }
 
