@@ -12,12 +12,48 @@ header {
     color: white;
 }
 
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2%;
+}
+
+.space{
+    width: 80%;
+}
+
+nav > button {
+    width: 20%;
+    height: 3rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: none;
+    border-radius: 15px;
+    background: black;
+    opacity: .5;
+    color: white;
+    font-size:xx-large;
+    cursor: pointer;
+
+}
+
+nav > button > img {
+    width: 8%;
+    height: 2rem;
+}
+
+.nav__MobilBtn {
+    display: none;
+}
+
 .logoDesktop {
     width: 50px;
-    margin: 0;
+    /* margin: 0; */
     aspect-ratio: 1;
     display: flex;
-    padding: 2%;
+    /* padding: 2%; */
     cursor: pointer;
 }
 
@@ -262,14 +298,37 @@ footer {
     color: white;
 }
 /* media queries */
+
+@media screen and (max-width: 1060px) {
+    .nav__DesktopBtn {
+        display: none;
+    }
+    .nav__MobilBtn {
+        display: block;
+        width: 6%;
+    }
+
+    .nav__MobilBtn > img {
+        width: 60%;
+        height: 2rem;
+    
+    }
+}
+
+
 @media screen and (max-width: 740px) {
 
     header{
         min-height: 30vh;
     }
 
+    .nav__MobilBtn {
+        width: 8%;
+    }
+
     .header__btn {
         display: none;
+
     }
 
     h1 {
@@ -332,6 +391,10 @@ footer {
     header{
         min-height: 30vh;
 
+    }
+
+    .nav__MobilBtn {
+        width:10%;
     }
 
     .logoDesktop {
