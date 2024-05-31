@@ -27,15 +27,3 @@ function toggleNav() {
     var navList = document.getElementById("navlist");
     navList.classList.toggle("show-nav");
 }
-
-function updateLogo() {
-    var logo = document.getElementById("logo");
-    if (window.innerWidth < 768) {
-        logo.src = "assets/img/logoMobil.svg";
-    } else {
-        logo.src = "assets/img/LogoDesktop.svg";
-    }
-}
-
-window.addEventListener("load", updateLogo);
-window.addEventListener("resize", updateLogo);
