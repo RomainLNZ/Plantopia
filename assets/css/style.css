@@ -1,0 +1,445 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    min-height: 90vh;
+    background: url('../img/header_img.png');
+    background-size: cover;
+    color: white;
+}
+
+nav {
+    width: 96%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%;
+}
+
+/* .space{
+    height: 100%;
+    width: 10%;
+    background: yellow;
+} */
+
+nav>button {
+    width: 20%;
+    height: 3rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: none;
+    border-radius: 15px;
+    background: black;
+    opacity: .5;
+    color: white;
+    font-size: xx-large;
+    cursor: pointer;
+
+}
+
+nav>button>img {
+    width: 8%;
+    height: 2rem;
+}
+
+.nav__MobilBtn {
+    display: none;
+}
+
+.logoDesktop {
+    width: 50px;
+    aspect-ratio: 1;
+    display: flex;
+    cursor: pointer;
+}
+
+.logoMobil {
+    display: none;
+}
+
+h1 {
+    position: absolute;
+    top: 20%;
+    left: 8%;
+    color: white;
+    font-size: 10rem;
+    font-family: "Inria sans", cursive;
+}
+
+h2 {
+    height: 10%;
+    width: 100%;
+    font-size: 4rem;
+    font-weight: lighter;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 3rem;
+    font-family: "Inria sans", cursive;
+    background: linear-gradient(180deg, rgba(204, 210, 200, 1) 0%, rgba(255, 255, 255, 1) 80%);
+
+}
+
+p {
+    margin-top: 0;
+}
+
+.desktopText {
+    position: absolute;
+    top: 60%;
+    left: 8%;
+    font-size: 3rem;
+}
+
+.header__btn {
+    width: 25%;
+    height: 5%;
+    position: absolute;
+    bottom: 25%;
+    left: 8%;
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    padding: .8rem 1rem;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 15px;
+    background: #5d9657;
+    color: white;
+    font-size: 1rem;
+}
+
+button>img {
+    margin-left: .2rem;
+}
+
+.header__btn>button:hover {
+    background: #1e5519;
+}
+
+
+.textShare {
+    height: 10vh;
+    padding-top: 1.5%;
+    display: flex;
+    justify-content: center;
+    background: #CCD2C8;
+}
+
+.textShare>p>span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.mobileText {
+    display: none;
+}
+
+.textShare__P {
+    margin-top: 0;
+    font-size: 30px;
+    font-style: italic;
+}
+
+.discover {
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    background-image: url('../img/Germdetour.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.discoPlant {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.discoPlant>.circle {
+    height: 15rem;
+    width: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #e4e7e2;
+    opacity: .8;
+}
+
+.circle>p {
+    text-align: center;
+}
+
+.faq {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.faq__logo {
+    height: 6rem;
+    width: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: #c3e0c3;
+}
+
+.drop {
+    width: 80%;
+    height: 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 15px;
+    background: #c3e0c3;
+}
+
+.drop>p {
+    width: 80%;
+}
+
+.down {
+    width: 3.5rem;
+    height: 3.5rem;
+    border: none;
+    border-radius: 50rem;
+    background: #69b169;
+}
+
+.register__text>p {
+    width: 100%;
+    text-align: center;
+}
+
+.registre_btn,
+.form__submit>input {
+    width: 20%;
+    height: 5%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 10px;
+    font-size: 100%;
+    color: white;
+    background: #69b169;
+}
+
+.register {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ccd2c8;
+}
+
+.register__form {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: url('../img/registerbg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.register__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.form_field>input {
+    width: 35rem;
+    height: 2rem;
+    border: none;
+    border-radius: 10px;
+}
+
+.form__submit>input {
+    width: 14rem;
+    height: 2rem;
+    opacity: .8;
+}
+
+footer {
+    min-height: 5rem;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    background: #333532;
+    color: white;
+}
+
+/* media queries */
+
+@media screen and (max-width: 1060px) {
+    .nav__DesktopBtn {
+        display: none;
+    }
+
+    .nav__MobilBtn {
+        display: block;
+        width: 6%;
+    }
+
+    .nav__MobilBtn>img {
+        width: 60%;
+        height: 2rem;
+
+    }
+}
+
+
+@media screen and (max-width: 740px) {
+
+    header {
+        min-height: 30vh;
+    }
+
+    .nav__MobilBtn {
+        width: 8%;
+    }
+
+    .header__btn {
+        display: none;
+
+    }
+
+    h1 {
+        font-size: 5rem;
+        top: 3%;
+        left: 25%;
+    }
+
+    h2 {
+        background: linear-gradient(180deg, rgba(204, 210, 200, 1) 0%, rgba(255, 255, 255, 0) 80%);
+    }
+
+    .discover {
+        min-height: 100vh;
+        background-position: right;
+        justify-content: space-between;
+
+    }
+
+    header>p>span.desktopText {
+        display: none;
+    }
+
+    header>p>span.mobileText {
+        display: inline-block;
+        position: absolute;
+        top: 25%;
+        left: 30%;
+        font-size: 1.5rem;
+    }
+
+    .textShare {
+        display: none;
+    }
+
+
+    .discoPlant {
+        min-height: 100vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-between;
+    }
+
+    .discoPlant>.circle {
+        height: 11rem;
+        width: 11rem;
+    }
+
+    .form_field>input {
+        width: 25rem;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+
+    header {
+        min-height: 30vh;
+
+    }
+
+    .logoMobil {}
+
+    .nav__MobilBtn {
+        width: 10%;
+    }
+
+    .logoDesktop {
+        display: none;
+    }
+
+    .logoMobil {
+        display: block;
+        width: 10%;
+        aspect-ratio: 1;
+        display: flex;
+        margin-top: 10px;
+        padding: 2%;
+        cursor: pointer;
+    }
+
+    h1 {
+        font-size: 5rem;
+        top: 3%;
+        left: 15.5%;
+    }
+
+    header>p>span.mobileText {
+        display: inline-block;
+        position: absolute;
+        top: 27%;
+        left: 32%;
+        font-size: 1rem;
+    }
+
+    .textShare {
+        display: none;
+    }
+
+    .discoPlant {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    h1 {
+        font-size: 4rem;
+    }
+
+    .form_field>input {
+        width: 22rem;
+        height: 2rem;
+    }
+
+}
