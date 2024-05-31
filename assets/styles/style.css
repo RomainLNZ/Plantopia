@@ -7,7 +7,7 @@ body {
 header {
     min-height: 90vh;
     width: 100vw;
-    background: url(/assets/img/header_img.png);
+    background: url('../img/header_img.png');
     background-size: cover;
     color: white;
 }
@@ -160,7 +160,7 @@ p {
     height: 100vh;
     display: flex;
     justify-content: space-evenly;
-    background-image: url(/assets/img/Germdetour.png);
+    background-image: url('../img/Germdetour.png');
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -264,7 +264,7 @@ p {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    background: url(/assets/img/registerbg.png);
+    background: url('../img/registerbg.png');
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
@@ -397,9 +397,7 @@ footer {
 
     }
 
-    .logoMobil {
-        
-    }
+    .logoMobil {}
 
     .nav__MobilBtn {
         width: 10%;
