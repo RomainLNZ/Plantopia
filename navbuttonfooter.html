@@ -6,87 +6,140 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assets</title>
     <link rel="icon" type="image/x-icon" href="assets\img\logoMobil.svg">
-    <link rel="stylesheet" href="assets/styles/navbuttonfooter.css">
+    <link rel="stylesheet" href="assets/styles/style.css">
 </head>
 
 <body>
 
-    <nav class="navbar">
-        <img class="logodesktop" src="/assets/img/LogoDesktop.svg" alt="Logo"
-            onclick="window.location.href='home.html';">
-        <img class="logomobile" src="assets\img\logoMobil.svg" alt="Logo" onclick="window.location.href='home.html';">
-        <div class="searchbar">
-            <input type="text" id="searchinput" placeholder="Search..." onkeydown="checkKeyPress(event)">
-            <button class="performsearch" onclick="performsearch()"><ion-icon name="search"></ion-icon></button>
+    <nav class="navBar">
+        <!-- Logos start -->
+        <img class="logoDesktop" src="/assets/img/LogoDesktop.svg" alt="Logo">
+        <img class="logoMobile" src="/assets/img/logoMobil.svg" alt="Logo">
+        <!-- Logos end -->
+
+        <!-- Search start -->
+        <div class="searchBar">
+            <input type="text" id="searchInput" placeholder="Search...">
+            <button class="performSearch">
+                <ion-icon name="search"></ion-icon>
+            </button>
         </div>
-        <ul id="navlist" class="navlist">
-            <li class="desktop"><a href="home.html" alt="Home" title="Home"><ion-icon name="home-outline"
-                        class="homebutton"></ion-icon>
-                    Home</a></li>
+        <!-- Search end -->
+
+        <!-- Search mobile start -->
+        <div id="searchMobileContainer">
+            <input type="text" id="searchMobileBar" placeholder="Search...">
+        </div>
+        <!-- Search mobile end -->
+
+        <ul id="navList" class="navList">
+
+            <!-- Desktop Navbar start -->
             <li class="desktop">
-                <a href="catalog.html" alt="Catalog" title="Catalog">Catalog</a>
+                <a href="home.html" alt="Home" title="Home">
+                    <ion-icon name="home-outline" class="homeButton"></ion-icon>
+                    Home
+                </a>
             </li>
             <li class="desktop">
-                <a href="contact.html" alt="Contact" title="Contact">Contact</a>
+                <a href="catalog.html" alt="Catalog" title="Catalog">
+                    Catalog
+                </a>
             </li>
             <li class="desktop">
-                <a href="connexion.html" alt="Connection" title="Connection"><ion-icon name="person-outline"
-                        class="loginbutton"></ion-icon>
-                    Connection</a>
+                <a href="contact.html" alt="Contact" title="Contact">
+                    Contact
+                </a>
             </li>
-            <li class="phone"><a href="home.html" title="Home"><img src="assets\img\home.svg" alt="Home"></a>
+            <li class="desktop">
+                <a href="connexion.html" alt="Connection" title="Connection">
+                    <ion-icon name="person-outline" class="loginButton"></ion-icon>
+                    Connection
+                </a>
             </li>
-            <li class="phone"><img src="assets\img\search.svg" alt="Search" title="Search" />
+            <!-- Desktop Navbar end -->
+
+            <!-- Phone Navbar start -->
+            <li class="phone">
+                <a href="home.html" title="Home">
+                    <img src="assets\img\home.svg" alt="Home">
+                </a>
             </li>
-            <li class="phone"><a href="add.html" title="Add"><img src="assets\img\add.svg" alt="Add"></a>
+            <li class="phone">
+                <img src="assets/img/search.svg" alt="Search" title="Search" id="searchMobileIcon" />
             </li>
-            <li class="phone"><a href="basket.html" title="Basket"><img src="assets\img\shop.svg" alt="Basket"></a>
+            <li class="phone">
+                <a href="add.html" title="Add">
+                    <img src="assets\img\add.svg" alt="Add">
+                </a>
             </li>
-            <li class="phone"><a href="connexion.html" title="Connexion"><img src="assets\img\account.svg"
-                        alt="Account"></a>
+            <li class="phone">
+                <a href="basket.html" title="Basket">
+                    <img src="assets\img\shop.svg" alt="Basket">
+                </a>
             </li>
+            <li class="phone">
+                <a href="connexion.html" title="Connexion">
+                    <img src="assets\img\account.svg" alt="Account">
+                </a>
+            </li>
+            <!-- Phone Navbar end -->
+
         </ul>
-        <button id="hiddennav" onclick="toggleNav()">
-            <div class="middle-bar"></div>
+
+        <!-- Phone button nav start -->
+        <button id="hiddenNav">
+            <div class="middleBar"></div>
         </button>
+        <!-- Phone button end start -->
+
     </nav>
 
-    <div class="wrapper">
-        <div class="content">
+    <main class="content">
+        <!-- Put your content here -->
+    </main>
 
-        </div>
-        <footer class="footer">
-            <div class="footer-container">
-                <div class="footer-column">
-                    <h3>Social media</h3>
-                    <div class="social-media-icons">
-                        <div>
+    <!-- Footer start -->
+    <footer class="footer">
+        <div class="footerContainer">
+            <div class="footerColumn">
+                <h3>Social media</h3>
+                <div class="socialMediaIcons">
+                    <div>
+                        <a href="https://x.com/">
                             <ion-icon name="logo-twitter"></ion-icon>
+                        </a>
+                        <a href="https://www.facebook.com/">
                             <ion-icon name="logo-facebook"></ion-icon>
-                        </div>
-                        <div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.whatsapp.com/">
                             <ion-icon name="logo-whatsapp"></ion-icon>
+                        </a>
+                        <a href="https://instagram.com/">
                             <ion-icon name="logo-instagram"></ion-icon>
-                        </div>
+                        </a>
                     </div>
                 </div>
-                <div class="footer-column">
-                    <h3>Customer care</h3>
-                    <a href="#">my account</a>
-                    <a href="#">returns and refund policy</a>
-                    <a href="#">Track your order</a>
-                    <a href="#">Contact us</a>
-                </div>
-                <div class="footer-column">
-                    <h3>Customer care</h3>
-                    <a href="#">my account</a>
-                    <a href="#">returns and refund policy</a>
-                    <a href="#">Track your order</a>
-                    <a href="#">Contact us</a>
-                </div>
             </div>
-        </footer>
-    </div>
+            <div class="footerColumn">
+                <h3>Customer care</h3>
+                <a href="#">my account</a>
+                <a href="#">returns and refund policy</a>
+                <a href="#">Track your order</a>
+                <a href="#">Contact us</a>
+            </div>
+            <div class="footerColumn">
+                <h3>Customer care</h3>
+                <a href="#">my account</a>
+                <a href="#">returns and refund policy</a>
+                <a href="#">Track your order</a>
+                <a href="#">Contact us</a>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer end -->
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
