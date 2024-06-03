@@ -48,7 +48,7 @@ main {
     height: 30%;
     padding: 10%;
 }
-.button-con{
+.buttonCon{
     background-color: #57a353;
     width: 90%;
     height: 3rem;
@@ -57,11 +57,17 @@ main {
     border: none;
     box-shadow: .5px .5px 5px gray;
     color: white;
-    margin-bottom: 1%;
+    margin-bottom: 7%;
     cursor: pointer;
 }
+.buttonPro{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-.button-con>img {
+.buttonCon>img {
     display: none;
 }
 
@@ -116,10 +122,15 @@ main {
 .cardLogo {
     border: none;
     border-radius: 2rem;
-    padding:0.5rem;
+    padding:.5rem;
     margin: 0.5rem;
     background: #57a353;
     align-self: end;
+}
+.cardLogo>img{
+    width: 1rem;
+    padding-left: .2rem;
+    padding-right: .2rem;
 }
 .cardLogo:hover {
     cursor: pointer;
@@ -134,8 +145,6 @@ main {
     .containerItem>.card {
         width: 17%;
     }
-
-
 }
 
 @media screen and (max-width: 1300PX) {
@@ -164,21 +173,28 @@ main {
         padding-left: 0;
     }
 
-    .button-con {
+    .buttonCon {
         background: none;
         box-shadow: .5px .5px 5px rgb(255, 255, 255);
         display: flex;
         align-items: center;
         justify-content: center;
+        
+    }
+    .buttonPro{
+        width: 80%;
+        display: flex;
+        flex-direction:row;
+        align-items: center;
     }
 
-    .button-con>img {
+    .buttonCon>img {
         display: block;
         align-items: center;
         width: 2rem;
     }
 
-    .button-con>p {
+    .buttonCon>p {
         display: none;
 
     }
@@ -240,20 +256,13 @@ main {
     }
 
     .containerItem>.card {
-        height: 13rem;
+        height: 14rem;
     }
 }
 
 @media screen and (max-width:580px) {
-    .cardLogo {
-        border: none;
-        background-color: #57a353;
-        width: 90%;
-        border-radius: 0.5rem;
-        padding-left: 0;
-    }
 
     .containerItem>.card {
-        width: 40%;
+        width: 44%;
     }
 }

@@ -30,7 +30,7 @@ h1 {
     font-family: "JejuMyeongjo", cursive;
 }
 
-header > p {
+header>p {
     position: absolute;
     top: 55%;
     left: 8%;
@@ -47,7 +47,7 @@ header > p {
     justify-content: space-between;
 }
 
-.header__btn > button {
+.header__btn>button {
     width: 45%;
     height: 90%;
     display: flex;
@@ -60,19 +60,18 @@ header > p {
     font-size: 1rem;
 }
 
-.header__btn > button:hover {
+.header__btn>button:hover {
     background: #1e5519;
 }
 
-.header__btn > button > img {
+.header__btn>button>img {
     width: 15%;
     height: 55%;
     text-align: center;
 }
 
 
-.textShare{
-    height: ;
+.textShare {
     width: 100%;
     display: flex;
     align-items: center;
@@ -89,6 +88,7 @@ header > p {
     font-size: 30px;
     font-style: italic;
 }
+
 
 /* @media screen and (max-width: px) {
 
