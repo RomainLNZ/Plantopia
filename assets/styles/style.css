@@ -28,6 +28,33 @@ a:active {
 
 /* Global link end */
 
+/* Button start */
+button {
+    background-color: #27ae60;
+    color: #FFFFFF;
+    height: fit-content;
+    width: fit-content;
+    padding: 15px 30px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    border-radius: .25rem;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2ecc71;
+}
+
+button:active {
+    background-color: #FFA462;
+    text-decoration: none;
+}
+
+/* Button end */
+
 /* Navbar start */
 .navBar {
     display: flex;
@@ -119,17 +146,19 @@ a:active {
     justify-content: center;
     align-items: center;
     background-color: #a6ffa5;
+    color: rgb(80, 80, 80);
+    padding: 0;
     border: none;
     border-radius: 2rem;
     height: 80%;
     width: 13%;
     margin-left: 0.3rem;
     cursor: pointer;
-    transition: background-color 0.3s, box-shadow 0.3s;
 }
 
 .performSearch:hover {
     background-color: #85e085;
+    color: #000000;
 }
 
 #searchMobileContainer {

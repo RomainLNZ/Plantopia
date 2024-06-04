@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.backgroundImage {
+    width: 100%;
+    height: 30rem;
+    background-image: url('/assets/img/imageforest.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 0;
+}
+
+.contact {
+    padding: 20px;
+    margin-top: -5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.contactInfo {
+    margin-bottom: 20px;
+}
+
+.contactInfo p {
+    margin-bottom: 10px;
+}
+
+.socialMedia {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.socialMedia li {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.socialMedia a {
+    color: black;
+    font-size: 24px;
+}
+
+.contactForm {
+    background-color: white;
+    box-shadow: 1px 1px 5px gray;
+    border-radius: .5rem;
+    padding: 20px;
+    width: 40vw;
+}
+
+.inputGroup {
+    margin-bottom: 15px;
+}
+
+.inputGroup label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.inputGroup input,
+.inputGroup textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: .5rem;
+    border: none;
+    box-shadow: 1px 4px 9px rgba(0, 0, 0, 0.25);
+}
+
+#message,
+#email,
+#name {
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+
+}
+
+.submitButton {
+    background-color: #228B22;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.submitButton:hover {
+    background-color: #98FB98;
+    color: #000000;
+}
